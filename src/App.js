@@ -14,7 +14,7 @@ const App = () => {
 	const [searchValue, setSearchValue] = useState('');
 
 	const getMovieRequest = (searchValue) => {
-		const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=263d22d8`;
+		const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=263d22d8`;
 		axios.get(url)
 		.then(response=>{
 			if (response.data.Search) {
